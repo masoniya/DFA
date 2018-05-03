@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class Alphabet {
 
-    HashSet<Character> charSet;
+    private HashSet<Character> charSet;
 
     public Alphabet(char ... elems){
 
@@ -12,15 +12,15 @@ public class Alphabet {
         for(char elem : elems){
             charSet.add(Character.valueOf(elem));
         }
-
     }
 
     public HashSet<Character> getCharSet() {
         return charSet;
     }
 
-    public void display(){
-        System.out.println(charSet);
+    @Override
+    public String toString(){
+        return charSet.toString();
     }
 
 
