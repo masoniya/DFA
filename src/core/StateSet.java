@@ -9,8 +9,8 @@ public class StateSet {
 
     private HashSet<String> states;
 
-    public static String statePattern = ".";
-    //public static String statePattern = "q[0-9]*";
+    //public static String statePattern = ".";
+    public static String statePattern = "q[0-9]*";
 
     public StateSet(String ... elems) throws InputMismatchException {
 
@@ -23,11 +23,22 @@ public class StateSet {
         }
     }
 
+    public void addState(String elem) throws InputMismatchException {
+            if(!Pattern.matches(statePattern, elem)){
+                throw new InputMismatchException();
+            }
+            states.add(elem);
+    }
+
     public boolean contains(String s){
         if(states.contains(s)){
             return true;
         }
         return false;
+    }
+
+    public HashSet<String> getStates(){
+        return states;
     }
 
     @Override

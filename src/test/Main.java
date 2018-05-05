@@ -1,20 +1,26 @@
 package test;
 
 
-import com.google.gson.Gson;
+import com.google.gson.*;
 import core.*;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.InputMismatchException;
+import java.util.Scanner;
+
 
 public class Main {
 
+    public static  Scanner scan = new Scanner(System.in);
+
     public static void main(String args[]){
 
-        DFA automaton;
+        DFA automaton = new DFA();
 
-        StateSet q = null;
+        /*StateSet q = null;
         Alphabet sigma;
         State initialState;
         StateSet finalStates = null;
@@ -47,13 +53,9 @@ public class Main {
         delta.addTransition('0', "C", "C");
         delta.addTransition('1', "C", "C");
 
-        automaton = new DFA(q, sigma, initialState, finalStates, delta);
+        automaton = new DFA(q, sigma, initialState, finalStates, delta);*/
 
         System.out.println(automaton);
-
-        System.out.println(automaton.start("101000100101"));
-
-        saveToFile(automaton, "savedDFA.json");
 
 
     }
@@ -68,6 +70,69 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static DFA loadFromFile(String fileName){
+        JsonParser parser = new JsonParser();
+        DFA dfa = null;
+        try{
+            Object obj = parser.parse(new FileReader(fileName));
+            JsonObject jsonObject = (JsonObject)obj;
+
+            //parsing the States
+            StateSet q = new StateSet();
+            JsonObject qObj = (JsonObject) jsonObject.get("q");
+            JsonArray qArray = (JsonArray) qObj.get("states");
+            for(int i = 0; i < qArray.size(); i++){
+                String s = qArray.get(i).getAsString();
+                q.addState(s);
+            }
+
+            //parsing the Alphabet
+            Alphabet sigma = new Alphabet();
+            JsonObject sigmaObj = (JsonObject) jsonObject.get("sigma");
+            JsonArray sigmaArray = (JsonArray) sigmaObj.get("charSet");
+            for(int i = 0; i < sigmaArray.size(); i++){
+                String s = sigmaArray.get(i).getAsString();
+                sigma.addSymbol(s.charAt(0));
+            }
+
+            //parsing the InitialState
+            State initialState = null;
+            JsonObject initialStateObj = (JsonObject) jsonObject.get("initialState");
+            String initialStateString = (String) initialStateObj.get("stateName").getAsString();
+            initialState = new State(initialStateString);
+
+            //parsing the FinalStates
+            StateSet finalStates = new StateSet();
+            JsonObject finalStatesObj = (JsonObject) jsonObject.get("finalStates");
+            JsonArray finalStatesArray = (JsonArray) finalStatesObj.get("states");
+            for(int i = 0; i < finalStatesArray.size(); i++){
+                String s = finalStatesArray.get(i).getAsString();
+                finalStates.addState(s);
+            }
+
+            //Parsing the TransitionTable
+            TransitionTable delta = new TransitionTable();
+            JsonObject deltaObj = (JsonObject) ((JsonObject) jsonObject.get("delta")).get("table");
+            for(char c : sigma.getCharSet()){
+                for(String s : q.getStates()){
+                    String key = "(" + String.valueOf(c) + "|" + s + ")";
+                    if(deltaObj.has(key)){
+                        JsonObject value = (JsonObject) deltaObj.get(key);
+                        String stateName = value.get("stateName").getAsString();
+                        delta.addTransition(c, s, stateName);
+                    }
+                }
+            }
+
+            //create the new DFA
+            dfa = new DFA(q, sigma, initialState, finalStates, delta);
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return dfa;
     }
 
 }

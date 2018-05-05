@@ -15,6 +15,10 @@ public class Alphabet {
         }
     }
 
+    public void addSymbol(char elem) {
+        charSet.add(elem);
+    }
+
     public HashSet<Character> getCharSet() {
         return charSet;
     }
