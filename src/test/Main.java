@@ -1,7 +1,11 @@
 package test;
 
+
+import com.google.gson.Gson;
 import core.*;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.InputMismatchException;
 
 public class Main {
@@ -49,6 +53,22 @@ public class Main {
 
         System.out.println(automaton.start("101000100101"));
 
+        saveToFile(automaton, "savedDFA.json");
+
+
     }
+
+    public static void saveToFile(Object obj, String fileName){
+        Gson gson = new Gson();
+        DFA dfa = (DFA)obj;
+        try {
+            FileWriter writer = new FileWriter(fileName);
+            gson.toJson(dfa, writer);
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
 

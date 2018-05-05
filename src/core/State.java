@@ -1,5 +1,6 @@
 package core;
 
+
 public class State {
 
     private String stateName;

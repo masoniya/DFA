@@ -1,5 +1,6 @@
 package core;
 
+
 import java.util.HashSet;
 
 public class Alphabet {

@@ -1,5 +1,6 @@
 package core;
 
+
 import java.util.HashMap;
 
 public class TransitionTable {
