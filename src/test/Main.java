@@ -18,9 +18,10 @@ public class Main {
 
     public static void main(String args[]){
 
-        DFA automaton = new DFA();
+        /*//DFA automaton = new DFA();
+        DFA automaton = null;
 
-        /*StateSet q = null;
+        StateSet q = null;
         Alphabet sigma;
         State initialState;
         StateSet finalStates = null;
@@ -53,11 +54,17 @@ public class Main {
         delta.addTransition('0', "C", "C");
         delta.addTransition('1', "C", "C");
 
-        automaton = new DFA(q, sigma, initialState, finalStates, delta);*/
+        automaton = new DFA(q, sigma, initialState, finalStates, delta);
 
-        System.out.println(automaton);
+        saveToFile(automaton, "savedDFA.json");
 
+        automaton = loadFromFile("savedDFA.json");
 
+        System.out.println(automaton);*/
+
+        DFA automaton2 = new DFA();
+
+        System.out.println(automaton2);
     }
 
     public static void saveToFile(Object obj, String fileName){
