@@ -62,6 +62,8 @@ public class Main {
 
         System.out.println(automaton);*/
 
+        /* this is a test comment by ichigo*/
+
         DFA automaton2 = new DFA();
 
         System.out.println(automaton2);
