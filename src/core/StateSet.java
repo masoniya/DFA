@@ -17,7 +17,7 @@ public class StateSet {
         states = new HashSet<>();
         for(String elem : elems){
             if(!Pattern.matches(statePattern, elem)){
-                throw new InputMismatchException();
+                //throw new InputMismatchException();
             }
             states.add(elem);
         }
@@ -25,7 +25,7 @@ public class StateSet {
 
     public void addState(String elem) throws InputMismatchException {
             if(!Pattern.matches(statePattern, elem)){
-                throw new InputMismatchException();
+               // throw new InputMismatchException();
             }
             states.add(elem);
     }

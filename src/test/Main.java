@@ -3,6 +3,8 @@ package test;
 
 import com.google.gson.*;
 import core.*;
+import org.graphstream.graph.Graph;
+import org.graphstream.graph.implementations.SingleGraph;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -16,9 +18,9 @@ public class Main {
 
     public static  Scanner scan = new Scanner(System.in);
 
+
     public static void main(String args[]){
 
-        /*//DFA automaton = new DFA();
         DFA automaton = null;
 
         StateSet q = null;
@@ -60,13 +62,11 @@ public class Main {
 
         automaton = loadFromFile("savedDFA.json");
 
-        System.out.println(automaton);*/
+        System.out.println(automaton);
 
-        /* this is a test comment by ichigo*/
+        //DFA automaton2 = new DFA();
 
-        DFA automaton2 = new DFA();
-
-        System.out.println(automaton2);
+        //System.out.println(automaton2);
     }
 
     public static void saveToFile(Object obj, String fileName){
@@ -137,6 +137,8 @@ public class Main {
 
             //create the new DFA
             dfa = new DFA(q, sigma, initialState, finalStates, delta);
+
+            delta.drawDFA(q);
         }
         catch (FileNotFoundException e) {
             e.printStackTrace();

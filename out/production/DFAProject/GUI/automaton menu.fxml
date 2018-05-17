@@ -21,18 +21,18 @@
       <TextField layoutX="291.0" layoutY="211.0" prefHeight="25.0" prefWidth="45.0" />
       <Label layoutX="75.0" layoutY="257.0" prefHeight="17.0" prefWidth="124.0" text="final states" />
       <TextField layoutX="291.0" layoutY="253.0" prefHeight="25.0" prefWidth="97.0" />
-      <ComboBox fx:id="fruitCombo" layoutX="281.0" layoutY="126.0" prefWidth="90.0" promptText="choose">
+      <ComboBox fx:id="fruitCombo" layoutX="401.0" layoutY="126.0" prefWidth="90.0" promptText="custom">
          <items>
             <FXCollections fx:factory="observableArrayList">
-               <String fx:value="English" />
-               <String fx:value="Arabic" />
-               <String fx:value="Symbols" />
-               <String fx:value="all Characters and symbols"/>
+               <String fx:value="Apple" />
+               <String fx:value="Orange" />
+               <String fx:value="Pear" />
             </FXCollections>
          </items>
       </ComboBox>
 
       <Button layoutX="446.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" text="go" />
+      <TextField layoutX="289.0" layoutY="126.0" prefHeight="25.0" prefWidth="97.0" />
 
    </children>
 </AnchorPane>
