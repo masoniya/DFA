@@ -2,3 +2,4 @@
 .project
 out/production/DFAProject/.gitignore
 out/production/DFAProject/GUI/.gitignore
+.idea/workspace.xml
