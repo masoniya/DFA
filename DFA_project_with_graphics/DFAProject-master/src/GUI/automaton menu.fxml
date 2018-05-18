@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="291.0" layoutY="84.0" prefHeight="25.0" prefWidth="45.0" />
+      <Label layoutX="75.0" layoutY="88.0" prefHeight="17.0" prefWidth="155.0" text="number of states" />
+      <Label layoutX="75.0" layoutY="130.0" prefHeight="17.0" prefWidth="62.0" text="Alphabet" />
+      <Label layoutX="75.0" layoutY="174.0" prefHeight="17.0" prefWidth="62.0" text="Initial state" />
+      <TextField layoutX="291.0" layoutY="170.0" prefHeight="25.0" prefWidth="45.0" />
+      <Label layoutX="75.0" layoutY="215.0" prefHeight="17.0" prefWidth="124.0" text="number of final states" />
+      <TextField layoutX="291.0" layoutY="211.0" prefHeight="25.0" prefWidth="45.0" />
+      <Label layoutX="75.0" layoutY="257.0" prefHeight="17.0" prefWidth="124.0" text="final states" />
+      <TextField layoutX="291.0" layoutY="253.0" prefHeight="25.0" prefWidth="97.0" />
+      <ComboBox fx:id="fruitCombo" layoutX="401.0" layoutY="126.0" prefWidth="90.0" promptText="custom">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Apple" />
+               <String fx:value="Orange" />
+               <String fx:value="Pear" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+
+      <Button layoutX="446.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" text="go" />
+      <TextField layoutX="289.0" layoutY="126.0" prefHeight="25.0" prefWidth="97.0" />
+
+   </children>
+</AnchorPane>
