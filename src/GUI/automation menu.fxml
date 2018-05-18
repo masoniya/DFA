@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AutomationMenu">
+    <children>
+        <Label layoutX="75.0" layoutY="34.0" prefHeight="17.0" prefWidth="155.0" text="number of states" />
+        <TextField fx:id="number_of_states" layoutX="235.0" layoutY="30.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="75.0" layoutY="76.0" prefHeight="17.0" prefWidth="62.0" text="Alphabet" />
+        <ComboBox fx:id="alpha_list" layoutX="383.0" layoutY="72.0" onAction="#onclick" prefWidth="90.0" promptText="custom">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="English" />
+                    <String fx:value="Numbers" />
+                    <String fx:value="SYmbol" />
+                    <String fx:value="Binary" />
+                    <String fx:value="all characters and numbers" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <TextField fx:id="custom_alpha" disable="true" layoutX="232.0" layoutY="72.0" prefHeight="25.0" prefWidth="97.0" />
+        <Label layoutX="75.0" layoutY="122.0" prefHeight="17.0" prefWidth="62.0" text="Initial state" />
+        <TextField fx:id="initial_state" layoutX="235.0" layoutY="118.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="60.0" layoutY="168.0" prefHeight="17.0" prefWidth="124.0" text="number of final states" />
+        <TextField fx:id="number_of_final_states" layoutX="235.0" layoutY="164.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="68.0" layoutY="207.0" prefHeight="17.0" prefWidth="124.0" text="final states" />
+        <TextField fx:id="test" layoutX="232.0" layoutY="203.0" prefHeight="25.0" prefWidth="97.0" />
+        <Label layoutX="60.0" layoutY="241.0" prefHeight="25.0" prefWidth="124.0" text="number of transition" />
+        <TextField fx:id="number_of_transition" layoutX="225.0" layoutY="241.0" prefHeight="25.0" prefWidth="112.0" />
+
+
+        <Button fx:id="root1" layoutX="258.0" layoutY="361.0" mnemonicParsing="false" onAction="#nextonclick" prefHeight="25.0" prefWidth="54.0" text="next" />
+      <Label layoutX="68.0" layoutY="311.0" prefHeight="17.0" prefWidth="124.0" text="transition" />
+      <TextField fx:id="current_state" disable="true" layoutX="210.0" layoutY="307.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="transition" disable="true" layoutX="294.0" layoutY="307.0" prefHeight="25.0" prefWidth="31.0" />
+      <TextField fx:id="next_state" disable="true" layoutX="368.0" layoutY="307.0" prefHeight="25.0" prefWidth="31.0" />
+      <Label layoutX="211.0" layoutY="282.0" text="current" />
+      <Label layoutX="285.0" layoutY="282.0" text="transition" />
+      <Label layoutX="371.0" layoutY="282.0" text="next" />
+      <Button layoutX="428.0" layoutY="307.0" mnemonicParsing="false" onAction="#addonclick" text="Add Transition" />
+      <Button layoutX="358.0" layoutY="241.0" mnemonicParsing="false" onAction="#okOncick" text="ok" />
+
+
+
+    </children>
+
+</AnchorPane>

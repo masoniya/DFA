@@ -5,11 +5,11 @@ import test.Main;
 
 public class DFA {
 
-    private StateSet q;
-    private Alphabet sigma;
-    private State initialState;
-    private StateSet finalStates;
-    private TransitionTable delta;
+    public StateSet q;
+    public Alphabet sigma;
+    public State initialState;
+    public StateSet finalStates;
+    public TransitionTable delta;
 
     public DFA(){
 
