@@ -1,1 +1,1 @@
-# DFAProject
+there's still an issue in drawing the graph , when a particular states goes to  another state on multiple inputs the graph should display the inputs on the edge separated by a comma but its not working due to a problem in  a hash map i made to help me display those commas , the problem is when i put an entry inside this map  its storing it (i used the debugger to know), but when i try to retrieve it it returns null , so if u can solve it that would be cool.
