@@ -1,7 +1,7 @@
 package core;
 
-
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class TransitionTable {
 
@@ -35,5 +35,32 @@ public class TransitionTable {
     public String toString(){
         return table.toString();
     }
+
+
+    /*public void drawDFA(StateSet states)
+    {
+
+        Graph graph = new SingleGraph("DFA");
+        HashSet <String> stateSet = states.getStates();
+        for(String s  : stateSet)
+        {
+            graph.addNode(s);
+        }
+        for (HashMap.Entry<Key, State> entry : table.entrySet()) {
+            Key key = entry.getKey();
+            State value = entry.getValue();
+
+            try{
+                graph.addEdge(Character.toString(key.getInput()),key.getState(),value.toString());
+            }
+            catch(Exception e)
+            {
+
+            }
+
+        }
+        graph.display();
+
+    }*/
 
 }

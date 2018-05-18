@@ -19,6 +19,7 @@
                     <String fx:value="English" />
                     <String fx:value="Numbers" />
                     <String fx:value="SYmbol" />
+                    <String fx:value="Binary" />
                     <String fx:value="all characters and numbers" />
                 </FXCollections>
             </items>

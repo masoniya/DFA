@@ -24,6 +24,14 @@ public class Key {
         result = 31 * result + state.hashCode();
         return result;
     }
+    public String getState()
+    {
+        return this.state;
+    }
+    public char getInput()
+    {
+        return this.input;
+    }
 
     @Override
     public String toString(){
