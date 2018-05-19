@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe6630f1-b520-4cf5-874e-9911c0a0b0cc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DFAProject/test/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/Main.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/GUI/Window.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/GUI/Window.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/GUI/Window_Controller.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/GUI/Window_Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/core/Key.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/core/Key.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/core/StateSet.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/core/StateSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/core/TransitionTable$GraphKey.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/core/TransitionTable$GraphKey.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/core/TransitionTable.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/core/TransitionTable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Window.java" afterPath="$PROJECT_DIR$/src/GUI/Window.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Window_Controller.java" afterPath="$PROJECT_DIR$/src/GUI/Window_Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/Alphabet.java" afterPath="$PROJECT_DIR$/src/core/Alphabet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/DFA.java" afterPath="$PROJECT_DIR$/src/core/DFA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/Key.java" afterPath="$PROJECT_DIR$/src/core/Key.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/State.java" afterPath="$PROJECT_DIR$/src/core/State.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/StateSet.java" afterPath="$PROJECT_DIR$/src/core/StateSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/TransitionTable.java" afterPath="$PROJECT_DIR$/src/core/TransitionTable.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Window_Controller.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Window_Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI/Window_Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="269">
+              <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,8 +102,8 @@
       <file leaf-file-name="AutomationMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/AutomationMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="119">
+              <caret line="228" column="0" lean-forward="true" selection-start-line="228" selection-start-column="0" selection-end-line="236" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#onclick#0;class#AutomationMenu#0" expanded="false" />
@@ -130,7 +114,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Key.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Key.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/Key.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -198,11 +182,11 @@
         <option value="$PROJECT_DIR$/src/GUI/AutomationMenu.java" />
         <option value="$PROJECT_DIR$/src/GUI/TestingWindow.java" />
         <option value="$PROJECT_DIR$/src/core/TransitionTable.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Window_Controller.java" />
         <option value="$PROJECT_DIR$/src/core/Main.java" />
         <option value="$PROJECT_DIR$/src/GUI/Window.java" />
         <option value="$PROJECT_DIR$/src/core/DFA.java" />
         <option value="$PROJECT_DIR$/src/core/Key.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Window_Controller.java" />
       </list>
     </option>
   </component>
@@ -422,12 +406,12 @@
       <workItem from="1526037500825" duration="66000" />
       <workItem from="1526404446263" duration="3947000" />
       <workItem from="1526453416151" duration="7515000" />
-      <workItem from="1526639402522" duration="25780000" />
+      <workItem from="1526639402522" duration="26463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77655000" />
+    <option name="totallyTimeSpent" value="78338000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -845,33 +829,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/AutomationMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onclick#0;class#AutomationMenu#0" expanded="false" />
-            <element signature="method#EnterOnClick#0;class#AutomationMenu#0" expanded="false" />
-            <element signature="method#okOncick#0;class#AutomationMenu#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/TestingWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Window_Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -913,6 +874,29 @@
             <element signature="e#1242#1243#0" expanded="true" />
             <marker date="1526737469686" expanded="false" signature="1270:1285" ph=" { " />
             <marker date="1526737469686" expanded="false" signature="1303:1309" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/AutomationMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="228" column="0" lean-forward="true" selection-start-line="228" selection-start-column="0" selection-end-line="236" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onclick#0;class#AutomationMenu#0" expanded="false" />
+            <element signature="method#EnterOnClick#0;class#AutomationMenu#0" expanded="false" />
+            <element signature="method#okOncick#0;class#AutomationMenu#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Window_Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

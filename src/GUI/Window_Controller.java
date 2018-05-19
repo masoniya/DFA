@@ -30,9 +30,17 @@ public class Window_Controller {
         stage.show();
     }
     @FXML
-    public void load_DFA(ActionEvent event)
-    {
+    public void load_DFA(ActionEvent event) throws IOException {
       DFA dfa=loadFromFile("C:\\Users\\ichigo\\Documents\\DFAProject\\savedDFA.json");
+
+        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Testing Window.fxml"));
+        Parent root=loader.load();
+        TestingWindow testingWindow = loader.getController();
+        testingWindow.setDfa(dfa);
+        Scene scene=new Scene(root);
+        stage.setScene(scene);
+        stage.show();
       dfa.delta.drawDFA(dfa.q);
       System.out.println(dfa.sigma);
       System.out.println(dfa.q);
