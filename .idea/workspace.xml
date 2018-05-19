@@ -5,24 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe6630f1-b520-4cf5-874e-9911c0a0b0cc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/controlsfx_8_40_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/controlsfx_samples_8_40_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/fxsampler_1_0_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gs_core_1_3_javadoc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gs_ui_1_3.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gs_core_1_3.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/GUI/AutomationMenu.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/GUI/AutomationMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/GUI/TestingWindow.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/GUI/TestingWindow.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DFAProject/test/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/Main.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/GUI/Window.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/GUI/Window.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/GUI/Window_Controller.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/GUI/Window_Controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/core/Key.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/core/Key.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/core/StateSet.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/core/StateSet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/core/TransitionTable$GraphKey.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/core/TransitionTable$GraphKey.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/core/TransitionTable.class" afterPath="$PROJECT_DIR$/out/production/DFAProject/core/TransitionTable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DFAProject.iml" afterPath="$PROJECT_DIR$/DFAProject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/GUI/Testing Window.fxml" afterPath="$PROJECT_DIR$/out/production/DFAProject/GUI/Testing Window.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFAProject/GUI/automation menu.fxml" afterPath="$PROJECT_DIR$/out/production/DFAProject/GUI/automation menu.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/AutomationMenu.java" afterPath="$PROJECT_DIR$/src/GUI/AutomationMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/MainWindow.fxml" afterPath="$PROJECT_DIR$/src/GUI/MainWindow.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Testing Window.fxml" afterPath="$PROJECT_DIR$/src/GUI/Testing Window.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/TestingWindow.java" afterPath="$PROJECT_DIR$/src/GUI/TestingWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Window.java" afterPath="$PROJECT_DIR$/src/GUI/Window.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Window_Controller.java" afterPath="$PROJECT_DIR$/src/GUI/Window_Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/automation menu.fxml" afterPath="$PROJECT_DIR$/src/GUI/automation menu.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/Alphabet.java" afterPath="$PROJECT_DIR$/src/core/Alphabet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/DFA.java" afterPath="$PROJECT_DIR$/src/core/DFA.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/Key.java" afterPath="$PROJECT_DIR$/src/core/Key.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/State.java" afterPath="$PROJECT_DIR$/src/core/State.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/StateSet.java" afterPath="$PROJECT_DIR$/src/core/StateSet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/TransitionTable.java" afterPath="$PROJECT_DIR$/src/core/TransitionTable.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,8 +36,8 @@
       <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+            <state relative-caret-position="255">
+              <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,8 +48,8 @@
       <file leaf-file-name="DFA.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/DFA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+            <state relative-caret-position="156">
+              <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -60,8 +58,8 @@
       <file leaf-file-name="TestingWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/TestingWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,14 +67,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransitionTable.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TransitionTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/TransitionTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="72" column="25" lean-forward="true" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+            <state relative-caret-position="184">
+              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2173#2190#0" expanded="true" />
+                <element signature="e#1260#1261#0" expanded="true" />
+                <element signature="e#1303#1304#0" expanded="true" />
+                <element signature="e#1343#1344#0" expanded="true" />
+                <element signature="e#1383#1384#0" expanded="true" />
+                <element signature="e#1433#1434#0" expanded="true" />
+                <element signature="e#1503#1504#0" expanded="true" />
+                <element signature="e#1582#1583#0" expanded="true" />
+                <element signature="e#1621#1622#0" expanded="true" />
+                <element signature="e#2266#2267#0" expanded="true" />
+                <element signature="e#2305#2306#0" expanded="true" />
+                <element signature="e#2412#2429#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Window_Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Window_Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,9 +118,10 @@
       <file leaf-file-name="AutomationMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/AutomationMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="233" column="34" lean-forward="false" selection-start-line="233" selection-start-column="34" selection-end-line="233" selection-end-column="34" />
+            <state relative-caret-position="-17">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#onclick#0;class#AutomationMenu#0" expanded="false" />
                 <element signature="method#EnterOnClick#0;class#AutomationMenu#0" expanded="false" />
                 <element signature="method#okOncick#0;class#AutomationMenu#0" expanded="false" />
@@ -109,14 +130,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Key.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Key.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/Key.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
               <folding>
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
+                <element signature="e#1209#1210#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
+                <marker date="1526737469686" expanded="false" signature="1270:1285" ph=" { " />
+                <marker date="1526737469686" expanded="false" signature="1303:1309" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -162,23 +185,24 @@
         <option value="$PROJECT_DIR$/src/Alphabet.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/core/States.java" />
-        <option value="$PROJECT_DIR$/src/core/Key.java" />
         <option value="$PROJECT_DIR$/savedDFA.json" />
         <option value="$PROJECT_DIR$/src/core/State.java" />
         <option value="$PROJECT_DIR$/src/core/Alphabet.java" />
         <option value="$PROJECT_DIR$/src/GUI/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/GUI/MainWindow.fxml" />
-        <option value="$PROJECT_DIR$/src/GUI/Window.java" />
         <option value="$PROJECT_DIR$/src/GUI/automaton menu.fxml" />
         <option value="$PROJECT_DIR$/src/core/StateSet.java" />
         <option value="$PROJECT_DIR$/src/test/Main.java" />
         <option value="$PROJECT_DIR$/src/GUI/automation menu.fxml" />
         <option value="$PROJECT_DIR$/src/GUI/Testing Window.fxml" />
-        <option value="$PROJECT_DIR$/src/core/DFA.java" />
-        <option value="$PROJECT_DIR$/src/core/TransitionTable.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Window_Controller.java" />
         <option value="$PROJECT_DIR$/src/GUI/AutomationMenu.java" />
         <option value="$PROJECT_DIR$/src/GUI/TestingWindow.java" />
+        <option value="$PROJECT_DIR$/src/core/TransitionTable.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Window_Controller.java" />
+        <option value="$PROJECT_DIR$/src/core/Main.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Window.java" />
+        <option value="$PROJECT_DIR$/src/core/DFA.java" />
+        <option value="$PROJECT_DIR$/src/core/Key.java" />
       </list>
     </option>
   </component>
@@ -191,7 +215,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="387" />
     <option name="y" value="-8" />
     <option name="width" value="785" />
@@ -242,12 +266,6 @@
               <item name="DFAProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DFAProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DFAProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -404,12 +422,12 @@
       <workItem from="1526037500825" duration="66000" />
       <workItem from="1526404446263" duration="3947000" />
       <workItem from="1526453416151" duration="7515000" />
-      <workItem from="1526639402522" duration="22741000" />
+      <workItem from="1526639402522" duration="25780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74616000" />
+    <option name="totallyTimeSpent" value="77655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,7 +439,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -433,24 +451,24 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33438486" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33438486" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2737921" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -493,25 +511,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/core/DFA.java</url>
-          <line>120</line>
+          <line>118</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GUI/TestingWindow.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/core/TransitionTable.java</url>
-          <line>71</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/core/DFA.java</url>
-          <line>127</line>
+          <line>125</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
@@ -521,13 +527,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/core/Key.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/savedDFA.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -539,9 +538,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2363">
           <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -602,9 +599,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -665,9 +660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -720,9 +713,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -755,24 +746,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/automaton menu.fxml" />
     <entry file="file://$PROJECT_DIR$/src/GUI/Create_new_DFA.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="128" column="53" lean-forward="false" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="1772" column="0" lean-forward="false" selection-start-line="1772" selection-start-column="0" selection-end-line="1772" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/automation menu.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -782,16 +755,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Window_Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/MainWindow.fxml">
@@ -813,31 +776,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Key.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/StateSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -855,11 +797,60 @@
         <state />
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="593" column="19" lean-forward="false" selection-start-line="593" selection-start-column="19" selection-end-line="593" selection-end-column="19" />
+          <folding>
+            <element signature="e#23597#23598#0" expanded="false" />
+            <element signature="e#23651#23652#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="1776" column="0" lean-forward="false" selection-start-line="1776" selection-start-column="0" selection-end-line="1776" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/TransitionTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1503#1504#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1621#1622#0" expanded="true" />
+            <element signature="e#2266#2267#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+            <element signature="e#2412#2429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/AutomationMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="233" column="34" lean-forward="false" selection-start-line="233" selection-start-column="34" selection-end-line="233" selection-end-column="34" />
+        <state relative-caret-position="-17">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#onclick#0;class#AutomationMenu#0" expanded="false" />
             <element signature="method#EnterOnClick#0;class#AutomationMenu#0" expanded="false" />
             <element signature="method#okOncick#0;class#AutomationMenu#0" expanded="false" />
@@ -867,42 +858,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/HashMap.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/TestingWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="593" column="19" lean-forward="false" selection-start-line="593" selection-start-column="19" selection-end-line="593" selection-end-column="19" />
+        <state relative-caret-position="374">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="e#23597#23598#0" expanded="true" />
-            <element signature="e#23651#23652#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Window_Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/DFA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        <state relative-caret-position="156">
+          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/TestingWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/core/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/TransitionTable.java">
+    <entry file="file://$PROJECT_DIR$/src/core/Key.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="72" column="25" lean-forward="true" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+        <state relative-caret-position="345">
+          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2173#2190#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <marker date="1526737469686" expanded="false" signature="1270:1285" ph=" { " />
+            <marker date="1526737469686" expanded="false" signature="1303:1309" ph=" }" />
           </folding>
         </state>
       </provider>

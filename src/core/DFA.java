@@ -1,7 +1,5 @@
 package core;
 
-import test.Main;
-
 
 public class DFA {
 
@@ -13,7 +11,7 @@ public class DFA {
 
     public DFA(){
 
-
+        /*
         //States Input
         int n;
         System.out.println("How Many States?");
@@ -104,8 +102,8 @@ public class DFA {
 
         //Transition Table Input
         System.out.println("Enter transitions : (q to quit)");
-        delta = new TransitionTable();
-        delta.addTransition('$', "q0", "q1");
+       delta = new TransitionTable();
+        delta.addTransition('$', "q0", "q1");*/
 
     }
 

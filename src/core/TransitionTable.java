@@ -19,21 +19,25 @@ public class TransitionTable {
             this.nextState = nextState;
         }
 
+
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
 
-            if (!(o instanceof GraphKey)) return false;
-            GraphKey key = (GraphKey) o;
-            return currentState == key.currentState && nextState == key.nextState;
+            GraphKey graphKey = (GraphKey) o;
+
+            if (currentState != null ? !currentState.equals(graphKey.currentState) : graphKey.currentState != null)
+                return false;
+            return nextState != null ? nextState.equals(graphKey.nextState) : graphKey.nextState == null;
         }
+
         @Override
         public int hashCode() {
-            int result = currentState.hashCode();
-            result = 31 * result + nextState.hashCode();
+            int result = currentState != null ? currentState.hashCode() : 0;
+            result = 31 * result + (nextState != null ? nextState.hashCode() : 0);
             return result;
         }
-
 
         public String getCurrentState() {
             return currentState;
@@ -42,10 +46,10 @@ public class TransitionTable {
         public String getNextState() {
             return nextState;
         }
-        @Override
-        public String toString(){
-            return "(" + currentState + "|" + nextState + ")";
-        }
+       @Override
+       public String toString(){
+          return "(" + currentState + "|" + nextState + ")";
+       }
 
 
     }
@@ -94,17 +98,17 @@ public class TransitionTable {
         HashSet <String> stateSet = states.getStates();
 
         graph.addAttribute("ui.stylesheet", "node {" +
-                "fill-color: #008B8B;" +
-                "fill-mode: gradient-diagonal1;"+
-                "text-size:20;" +
-                "shape: circle;" +
-                "size: 40px,40px,40px;" + "}" +
-                "edge {"+
-                "text-alignment: center;" +
-                "text-color:#008B8B;" +
-                "text-style:bold-italic;" +
-                "text-size:20;" +
-                "}"
+           "fill-color: #008B8B;" +
+           "fill-mode: gradient-diagonal1;"+
+              "text-size:20;" +
+           "shape: circle;" +
+           "size: 40px,40px,40px;" + "}" +
+           "edge {"+
+           "text-alignment: center;" +
+           "text-color:#008B8B;" +
+           "text-style:bold-italic;" +
+           "text-size:20;" +
+        "}"
         );
 
 
@@ -126,10 +130,10 @@ public class TransitionTable {
 
 
             GraphKey Gkey = new GraphKey(key.getState(),value.toString());
-            String oldValue = helperMap.get(Gkey);
 
             if(helperMap.containsKey(Gkey)){
 
+                String oldValue = helperMap.get(Gkey);
                 helperMap.replace(Gkey,oldValue +"," + String.valueOf(key.getInput()));
             }
             else
@@ -149,6 +153,14 @@ public class TransitionTable {
             }
 
 
+
+        }
+        for (HashMap.Entry<GraphKey,String> entry : helperMap.entrySet()) {
+            String currentState = entry.getKey().getCurrentState();
+            String nextState = entry.getKey().getNextState();
+            String value = entry.getValue();
+
+            System.out.println(entry.getKey()+ entry.getValue());
 
         }
         for (HashMap.Entry<GraphKey,String> entry : helperMap.entrySet()) {

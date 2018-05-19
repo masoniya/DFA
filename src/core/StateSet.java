@@ -25,8 +25,6 @@ public class StateSet {
 
     public void addState(String elem) throws InputMismatchException {
             if(!Pattern.matches(statePattern, elem)){
-                //throw new InputMismatchException();
-
                // throw new InputMismatchException();
             }
             states.add(elem);

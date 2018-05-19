@@ -13,6 +13,7 @@ import java.io.IOException;
 public class Window extends Application {
 
     public static void main(String[] args) {
+        System.setProperty("org.graphstream.ui.renderer","org.graphstream.ui.j2dviewer.J2DGraphRenderer");
         launch(args);
     }
 

@@ -1,4 +1,5 @@
 package GUI;
+import com.google.gson.Gson;
 import core.DFA;
 
 import com.google.gson.JsonArray;
@@ -16,6 +17,7 @@ import javafx.stage.Stage;
 import javax.swing.plaf.synth.SynthEditorPaneUI;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class Window_Controller {
@@ -35,6 +37,17 @@ public class Window_Controller {
       System.out.println(dfa.sigma);
       System.out.println(dfa.q);
       System.out.println(dfa.delta);
+    }
+    public static void saveToFile(Object obj, String fileName){
+        Gson gson = new Gson();
+        DFA dfa = (DFA)obj;
+        try {
+            FileWriter writer = new FileWriter(fileName);
+            gson.toJson(dfa, writer);
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     public static DFA loadFromFile(String fileName){
         JsonParser parser = new JsonParser();

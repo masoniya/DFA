@@ -5,25 +5,48 @@ public class Key {
     private char input;
     private String state;
 
-    public Key(char input, String state){
-        this.input = input;
-        this.state = state;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Key)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
+
         Key key = (Key) o;
-        return input == key.input && state == key.state;
+
+        if (input != key.input) return false;
+        return state != null ? state.equals(key.state) : key.state == null;
     }
 
     @Override
     public int hashCode() {
-        int result = Character.hashCode(input);
-        result = 31 * result + state.hashCode();
+        int result = (int) input;
+        result = 31 * result + (state != null ? state.hashCode() : 0);
         return result;
     }
+
+    public Key(char input, String state){
+        this.input = input;
+        this.state = state;
+
+    }
+
+   /* @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Key key = (Key) o;
+
+        if (input != key.input) return false;
+        return state != null ? state.equals(key.state) : key.state == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (int) input;
+        result = 31 * result + (state != null ? state.hashCode() : 0);
+        return result;
+    }*/
+
     public String getState()
     {
         return this.state;
