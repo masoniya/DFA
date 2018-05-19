@@ -18,6 +18,6 @@
       </Label>
       <Button fx:id="new_DFA" alignment="CENTER" layoutX="217.0" layoutY="102.0" mnemonicParsing="false" onAction="#new_DFA" prefHeight="54.0" prefWidth="167.0" text="Create New Automaton" textAlignment="CENTER" wrapText="true" />
       <Button fx:id="load_DFA" alignment="CENTER" layoutX="214.0" layoutY="200.0" mnemonicParsing="false" onAction="#load_DFA" prefHeight="54.0" prefWidth="167.0" text="Load Automaton from File" textAlignment="CENTER" wrapText="true" />
-      <Button fx:id="load_PHP" alignment="CENTER" layoutX="214.0" layoutY="294.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="167.0" text="Load The PHP DFA" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="load_PHP" alignment="CENTER" layoutX="214.0" layoutY="294.0" mnemonicParsing="false" onAction="#phponclick" prefHeight="54.0" prefWidth="167.0" text="Load The PHP DFA" textAlignment="CENTER" wrapText="true" />
    </children>
 </AnchorPane>

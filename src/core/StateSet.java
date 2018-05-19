@@ -10,7 +10,7 @@ public class StateSet {
     private HashSet<String> states;
 
     //public static String statePattern = ".";
-    public static String statePattern = "q[0-9]*";
+    public static String statePattern = "q[0-30]*";
 
     public StateSet(String ... elems) throws InputMismatchException {
 

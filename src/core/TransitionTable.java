@@ -46,10 +46,10 @@ public class TransitionTable {
         public String getNextState() {
             return nextState;
         }
-       @Override
-       public String toString(){
-          return "(" + currentState + "|" + nextState + ")";
-       }
+        @Override
+        public String toString(){
+            return "(" + currentState + "|" + nextState + ")";
+        }
 
 
     }
@@ -98,17 +98,17 @@ public class TransitionTable {
         HashSet <String> stateSet = states.getStates();
 
         graph.addAttribute("ui.stylesheet", "node {" +
-           "fill-color: #008B8B;" +
-           "fill-mode: gradient-diagonal1;"+
-              "text-size:20;" +
-           "shape: circle;" +
-           "size: 40px,40px,40px;" + "}" +
-           "edge {"+
-           "text-alignment: center;" +
-           "text-color:#008B8B;" +
-           "text-style:bold-italic;" +
-           "text-size:20;" +
-        "}"
+                "fill-color: #008B8B;" +
+                "fill-mode: gradient-diagonal1;"+
+                "text-size:20;" +
+                "shape: circle;" +
+                "size: 40px,40px,40px;" + "}" +
+                "edge {"+
+                "text-alignment: center;" +
+                "text-color:#008B8B;" +
+                "text-style:bold-italic;" +
+                "text-size:20;" +
+                "}"
         );
 
 

@@ -46,6 +46,26 @@ public class Window_Controller {
       System.out.println(dfa.q);
       System.out.println(dfa.delta);
     }
+
+    @FXML
+    public void phponclick(ActionEvent event) throws IOException {
+       // Window.savephp();
+        DFA dfa=loadFromFile("C:\\Users\\ichigo\\Documents\\DFAProject\\savedDFA.json");
+
+        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Testing Window.fxml"));
+        Parent root=loader.load();
+        TestingWindow testingWindow = loader.getController();
+        testingWindow.setDfa(dfa);
+        Scene scene=new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        dfa.delta.drawDFA(dfa.q);
+        System.out.println(dfa.sigma);
+        System.out.println(dfa.q);
+        System.out.println(dfa.delta);
+
+    }
     public static void saveToFile(Object obj, String fileName){
         Gson gson = new Gson();
         DFA dfa = (DFA)obj;

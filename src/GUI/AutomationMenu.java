@@ -46,7 +46,7 @@ public class AutomationMenu implements Initializable {
     ComboBox<String> alpha_list;
 
     ObservableList<String> alphabet_observablelist = FXCollections.observableArrayList("Custom","Binary","English","Numbers",
-            "Symbols", "characters and numbers");
+            "Symbols", "PHP Alphabet");
 
     @FXML
     TextField custom_alpha;
@@ -102,7 +102,7 @@ public class AutomationMenu implements Initializable {
                 alpha_picker = 2;
         if(alpha_list.getValue() == "Symbols")
                 alpha_picker = 3;
-        if(alpha_list.getValue() == "characters and numbers")
+        if(alpha_list.getValue() == "PHP Alphabet")
                 alpha_picker = 4;
 
         sigma = new Alphabet();
@@ -144,6 +144,14 @@ public class AutomationMenu implements Initializable {
                 for(int i = (int)'0'; i < 10 + (int)'0'; i++){
                     sigma.addSymbol((char)i);
                 }
+                sigma.addSymbol('/');
+                sigma.addSymbol('*');
+                sigma.addSymbol('$');
+                sigma.addSymbol('.');
+                sigma.addSymbol('(');
+                sigma.addSymbol(')');
+                sigma.addSymbol('{');
+                sigma.addSymbol('}');
                 break;
             default :
                 break;
@@ -225,8 +233,6 @@ public class AutomationMenu implements Initializable {
         System.out.println(dfa.delta);
 
         delta.drawDFA(q);
-
-
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Testing Window.fxml"));
         Parent root=loader.load();
