@@ -13,24 +13,22 @@
         <Label layoutX="75.0" layoutY="34.0" prefHeight="17.0" prefWidth="155.0" text="number of states" />
         <TextField fx:id="number_of_states" layoutX="235.0" layoutY="30.0" prefHeight="25.0" prefWidth="45.0" />
         <Label layoutX="75.0" layoutY="76.0" prefHeight="17.0" prefWidth="62.0" text="Alphabet" />
-        <ComboBox fx:id="alpha_list" layoutX="383.0" layoutY="72.0" onAction="#onclick" prefWidth="90.0" promptText="custom">
+        <ComboBox fx:id="alpha_list" layoutX="230.0" layoutY="72.0" onAction="#onclick" prefWidth="90.0" promptText="custom">
             <items>
                 <FXCollections fx:factory="observableArrayList">
                     <String fx:value="English" />
                     <String fx:value="Numbers" />
                     <String fx:value="SYmbol" />
-                    <String fx:value="Binary" />
                     <String fx:value="all characters and numbers" />
                 </FXCollections>
             </items>
         </ComboBox>
-        <TextField fx:id="custom_alpha" disable="true" layoutX="232.0" layoutY="72.0" prefHeight="25.0" prefWidth="97.0" />
+        <TextField fx:id="custom_alpha" disable="true" layoutX="353.0" layoutY="72.0" prefHeight="25.0" prefWidth="112.0" promptText="Enter alphabet as string" />
         <Label layoutX="75.0" layoutY="122.0" prefHeight="17.0" prefWidth="62.0" text="Initial state" />
         <TextField fx:id="initial_state" layoutX="235.0" layoutY="118.0" prefHeight="25.0" prefWidth="45.0" />
         <Label layoutX="60.0" layoutY="168.0" prefHeight="17.0" prefWidth="124.0" text="number of final states" />
         <TextField fx:id="number_of_final_states" layoutX="235.0" layoutY="164.0" prefHeight="25.0" prefWidth="45.0" />
         <Label layoutX="68.0" layoutY="207.0" prefHeight="17.0" prefWidth="124.0" text="final states" />
-        <TextField fx:id="test" layoutX="232.0" layoutY="203.0" prefHeight="25.0" prefWidth="97.0" />
         <Label layoutX="60.0" layoutY="241.0" prefHeight="25.0" prefWidth="124.0" text="number of transition" />
         <TextField fx:id="number_of_transition" layoutX="225.0" layoutY="241.0" prefHeight="25.0" prefWidth="112.0" />
 
@@ -45,6 +43,9 @@
       <Label layoutX="371.0" layoutY="282.0" text="next" />
       <Button layoutX="428.0" layoutY="307.0" mnemonicParsing="false" onAction="#addonclick" text="Add Transition" />
       <Button layoutX="358.0" layoutY="241.0" mnemonicParsing="false" onAction="#okOncick" text="ok" />
+      <Button layoutX="486.0" layoutY="72.0" mnemonicParsing="false" onAction="#EnterOnClick" text="Enter" />
+      <Button layoutX="299.0" layoutY="30.0" mnemonicParsing="false" onAction="#numberofstatesconfirmonclick" text="Enter" />
+      <ComboBox fx:id="final_states_menu" layoutX="233.0" layoutY="203.0" onAction="#finalstatesOnclick" prefHeight="25.0" prefWidth="44.0" />
 
 
 

@@ -31,6 +31,7 @@ public class Window_Controller {
     public void load_DFA(ActionEvent event)
     {
       DFA dfa=loadFromFile("C:\\Users\\ichigo\\Documents\\DFAProject\\savedDFA.json");
+      dfa.delta.drawDFA(dfa.q);
       System.out.println(dfa.sigma);
       System.out.println(dfa.q);
       System.out.println(dfa.delta);
