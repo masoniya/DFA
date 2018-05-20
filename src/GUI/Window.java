@@ -61,14 +61,16 @@ public class Window extends Application {
         {
             sigma.addSymbol((char) i);
         }
+        sigma.addSymbol('.');
         sigma.addSymbol('/');
         sigma.addSymbol('*');
         sigma.addSymbol('$');
+        sigma.addSymbol(' ');
 
         //intialize the final states set
         finalstates = new StateSet();
 
-        finalstates.addState("q2"); finalstates.addState("q4"); finalstates.addState("q8");
+        finalstates.addState("q2"); finalstates.addState("q3");finalstates.addState("q4"); finalstates.addState("q8");
         finalstates.addState("q13"); finalstates.addState("q15"); finalstates.addState("q18");
         finalstates.addState("q22");
 
@@ -92,7 +94,7 @@ public class Window extends Application {
         {
             delta.addTransition((char) i,"q2","q2");
             delta.addTransition((char)i, "q0","q3");
-            delta.addTransition((char)i,"q3","q4");
+            delta.addTransition((char)i,"q3","q3");
             delta.addTransition((char)i, "q4","q4");
             delta.addTransition((char)i,"q6","q6");
 
@@ -101,6 +103,7 @@ public class Window extends Application {
         delta.addTransition('.',"q3","q4");
         delta.addTransition('/',"q0","q5");
         delta.addTransition('*',"q5","q6");
+        delta.addTransition(' ',"q6","q6");
         delta.addTransition('*',"q6","q7");
         delta.addTransition('/',"q7","q8");
         delta.addTransition('w',"q0","q9");

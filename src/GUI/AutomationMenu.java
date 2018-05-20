@@ -213,6 +213,8 @@ public class AutomationMenu implements Initializable {
         }
     }
     @FXML
+    TextField save;
+    @FXML
     public void nextonclick(ActionEvent event) throws IOException {
 
 
@@ -231,6 +233,8 @@ public class AutomationMenu implements Initializable {
         System.out.println(dfa.sigma);
         System.out.println(dfa.finalStates);
         System.out.println(dfa.delta);
+
+        Window_Controller.saveToFile(dfa,save.getText()+".json");
 
         delta.drawDFA(q);
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();

@@ -51,7 +51,7 @@ public class Key {
     {
         return this.state;
     }
-    public char getInput()
+    public  char getInput()
     {
         return this.input;
     }

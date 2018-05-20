@@ -22,7 +22,10 @@ public class TestingWindow {
     @FXML
     Label truthlabel;
 
-    DFA dfa ;
+    @FXML
+    Label trueorfalse;
+
+    DFA dfa;
     public void setDfa(DFA dfa1)
     {
         this.dfa = dfa1;
@@ -34,31 +37,48 @@ public class TestingWindow {
         String checking = checking_String.getText();
         if(dfa.start(checking))
         {
-            if(isNumeric(checking))
-            {
+            trueorfalse.setText("belonging");
+
+        }
+        else
+            trueorfalse.setText("not belonging");
+    }
+    @FXML
+    public void checkphp(ActionEvent event)
+    {
+
+        String checking = checking_String.getText();
+        if(dfa.start(checking))
+        {
+            trueorfalse.setText("Accepted");
+            if (isNumeric(checking)) {
                 truthlabel.setText("number");
             }
-            char c = checking.charAt(0);
-            int n=checking.length();
-            char b = checking.charAt(n-1);
-            if( c == '$')
-            {
+            char c = 0, b = 0, a = 0, d = 0;
+            if (checking.length() > 1) {
+                c = checking.charAt(0);
+                int n = checking.length();
+                b = checking.charAt(n - 1);
+                a = checking.charAt(1);
+                d = checking.charAt(n - 2);
+            }
+            if (c == '$') {
                 truthlabel.setText("Variable");
             }
-            if(checking.equals("while") || checking.equals("case") || checking.equals("if") || checking.equals("for"))
-            {
+            if (checking.equals("while") || checking.equals("case") || checking.equals("if") || checking.equals("for")) {
                 truthlabel.setText("Key word");
             }
-            if(c == '/' && b =='/')
-            {
+            if (c == '/' && a == '*' && d == '*' && b == '/') {
                 truthlabel.setText("Comment");
             }
 
-            System.out.println("true");
         }
-        else
-            System.out.println("false");
+        else {
+            trueorfalse.setText("Error , not in the PhP Syntax");
+            truthlabel.setText("");
+        }
     }
+
 
     public static boolean isNumeric(String str)
     {

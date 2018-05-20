@@ -1,0 +1,1 @@
+{"q":{"states":["q1","q2","q0"]},"sigma":{"charSet":["0","1"]},"initialState":{"stateName":"q0"},"finalStates":{"states":["q2"]},"delta":{"table":{"(0|q0)":{"stateName":"q1"},"(1|q1)":{"stateName":"q2"}}}}

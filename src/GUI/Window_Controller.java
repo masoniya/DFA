@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import javax.swing.plaf.synth.SynthEditorPaneUI;
@@ -29,9 +30,13 @@ public class Window_Controller {
         stage.setScene(scene);
         stage.show();
     }
+
+    @FXML
+    TextField name;
     @FXML
     public void load_DFA(ActionEvent event) throws IOException {
-      DFA dfa=loadFromFile("C:\\Users\\ichigo\\Documents\\DFAProject\\savedDFA.json");
+
+        DFA dfa=loadFromFile("C:\\Users\\ichigo\\Documents\\DFAProject\\"+name.getText()+".json");
 
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Testing Window.fxml"));
@@ -41,15 +46,12 @@ public class Window_Controller {
         Scene scene=new Scene(root);
         stage.setScene(scene);
         stage.show();
-      dfa.delta.drawDFA(dfa.q);
-      System.out.println(dfa.sigma);
-      System.out.println(dfa.q);
-      System.out.println(dfa.delta);
+        dfa.delta.drawDFA(dfa.q);
     }
 
     @FXML
     public void phponclick(ActionEvent event) throws IOException {
-       // Window.savephp();
+        Window.savephp();
         DFA dfa=loadFromFile("C:\\Users\\ichigo\\Documents\\DFAProject\\savedDFA.json");
 
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();

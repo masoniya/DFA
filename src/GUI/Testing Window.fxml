@@ -11,6 +11,8 @@
       <TextField fx:id="checking_String" layoutX="58.0" layoutY="274.0" />
       <Button fx:id="check_button" layoutX="233.0" layoutY="274.0" mnemonicParsing="false" onAction="#check" text="check" />
       <Label layoutX="58.0" layoutY="243.0" prefHeight="17.0" prefWidth="149.0" text="Enter the String Here:" />
-      <Label fx:id="truthlabel" layoutX="362.0" layoutY="274.0" prefHeight="17.0" prefWidth="127.0" />
+      <Label fx:id="truthlabel" layoutX="397.0" layoutY="278.0" prefHeight="17.0" prefWidth="127.0" />
+      <Label fx:id="trueorfalse" layoutX="257.0" layoutY="345.0" prefHeight="17.0" prefWidth="108.0" />
+      <Button layoutX="294.0" layoutY="274.0" mnemonicParsing="false" onAction="#checkphp" text="check for PhP" />
    </children>
 </AnchorPane>

@@ -132,9 +132,18 @@ public class TransitionTable {
             GraphKey Gkey = new GraphKey(key.getState(),value.toString());
 
             if(helperMap.containsKey(Gkey)){
+                if(helperMap.get(Gkey).length() == 1)
+                {
+                    String oldValue = helperMap.get(Gkey);
+                    helperMap.replace(Gkey,oldValue +"," + String.valueOf(key.getInput()));
+                }
+                else
+                {
+                    String oldValue = helperMap.get(Gkey);
+                    helperMap.replace(Gkey,oldValue.substring(0,1)+".."+String.valueOf(key.getInput()));
+                }
 
-                String oldValue = helperMap.get(Gkey);
-                helperMap.replace(Gkey,oldValue +"," + String.valueOf(key.getInput()));
+
             }
             else
             {
@@ -168,8 +177,12 @@ public class TransitionTable {
             String nextState = entry.getKey().getNextState();
             String value = entry.getValue();
 
-            Edge edge = graph.getEdge(currentState+nextState);
-            edge.addAttribute("ui.label",value);
+
+
+                Edge edge = graph.getEdge(currentState + nextState);
+                edge.addAttribute("ui.label",  value);
+
+
 
 
 
