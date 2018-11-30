@@ -1,6 +1,5 @@
 package GUI;
 
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.Loader;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -13,9 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import core.*;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-import org.controlsfx.control.CheckComboBox;
 
 import java.io.IOException;
 import java.net.URL;

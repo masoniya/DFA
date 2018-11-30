@@ -1,1 +1,1 @@
-{"q":{"states":["q1","q2","q3","q0"]},"sigma":{"charSet":["0","1"]},"initialState":{"stateName":"q0"},"finalStates":{"states":[]},"delta":{"table":{"( |)":{"stateName":""}}}}
+{"q":{"states":["q1","q2","q0"]},"sigma":{"charSet":["0","1"]},"initialState":{"stateName":"q0"},"finalStates":{"states":["q2"]},"delta":{"table":{"(1|1)":{"stateName":"2"},"(1|0)":{"stateName":"1"}}}}
