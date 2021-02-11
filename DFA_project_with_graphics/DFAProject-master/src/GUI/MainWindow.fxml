@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Window_Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="102.0" layoutY="37.0" prefHeight="35.0" prefWidth="396.0" text="DFA project" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="new_DFA" alignment="CENTER" layoutX="217.0" layoutY="126.0" mnemonicParsing="false" onAction="#new_DFA" prefHeight="64.0" prefWidth="173.0" text="Create New Automaton" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="load_DFA" alignment="CENTER" layoutX="217.0" layoutY="221.0" mnemonicParsing="false" onAction="#load_DFA" prefHeight="64.0" prefWidth="173.0" text="Load Automaton from File" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>
